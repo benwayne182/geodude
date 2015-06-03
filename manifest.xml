@@ -1,0 +1,14 @@
+<package>
+  <description brief="launching_sot">
+
+     launching_sot
+
+  </description>
+  <author>Benoit Sinivassin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/launching_sot</url>
+
+</package>
+
+
