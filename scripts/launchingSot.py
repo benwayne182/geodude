@@ -26,7 +26,7 @@ rosrun rviz rviz
 terminal.extend(['--tab-with-profile=HoldOnExit', '-e','''
 bash -c '
 echo "geometric_simu, add a robot model"
-sleep 5
+sleep 10
 roslaunch hrp2_bringup geometric_simu.launch
 '
 ''' % locals(), '-t', '''Launch geometric simu'''])
@@ -39,7 +39,7 @@ echo "run command :"
 echo "from dynamic_graph.sot.application.velocity.precomputed_tasks import initialize"
 echo "solver=initialize(robot)"
 echo "robot.initializeTracer()"
-sleep 10
+sleep 20
 rosrun dynamic_graph_bridge run_command
 '
 ''' % locals(), '-t', '''Run Command'''])
@@ -50,7 +50,7 @@ terminal.extend(['--tab-with-profile=HoldOnExit', '-e','''
 
 bash -c '
 echo "start dynamic graph"
-sleep 45
+sleep 60
 rosservice call /start_dynamic_graph
 '
 ''' % locals(), '-t', '''Start dynamic graph'''])
