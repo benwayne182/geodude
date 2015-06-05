@@ -36,8 +36,8 @@ roslaunch hrp2_bringup geometric_simu.launch
 terminal.extend(['--tab-with-profile=HoldOnExit', '-e','''
 bash -c '
 echo "run command :"
-echo "from dynamic_graph.sot.application.velocity.precomputed_tasks import initialize"
-echo "solver=initialize(robot)"
+echo "from dynamic_graph.sot.application.velocity.precomputed_tasks import Application"
+echo "appli =Application(robot)"
 echo "robot.initializeTracer()"
 sleep 20
 rosrun dynamic_graph_bridge run_command
